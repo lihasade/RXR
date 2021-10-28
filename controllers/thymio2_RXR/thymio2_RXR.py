@@ -9,8 +9,8 @@ robot = Robot()
 # Get simulation step length.
 timeStep = int(robot.getBasicTimeStep())
 
-#compass = robot.getDevice("compass")
-#compass.enable(timeStep)
+compass = robot.getDevice("compass")
+compass.enable(timeStep)
 
 # Constants of the Thymio II motors and distance sensors.
 maxMotorVelocity = 9.53
@@ -55,9 +55,9 @@ while robot.step(timeStep) != -1:
     centralRightSensorValue = centralRightSensor.getValue() / distanceSensorCalibrationConstant
     outerRightSensorValue = outerRightSensor.getValue() / distanceSensorCalibrationConstant
     
-    #compassValues = compass.getValues()
+    compassValues = compass.getValues()
     if head == 0:
-        #initialCompassValue = compassValues[0]
+        initialCompassValue = compassValues[0]
         head = 1
     
     if centralRightSensorValue + outerRightSensorValue + centralLeftSensorValue + outerLeftSensorValue == 0:
