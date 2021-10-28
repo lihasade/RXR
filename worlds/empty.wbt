@@ -4,8 +4,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.4312849013895548 0.866591148046054 0.25102413422144165 4.977195430811047
-  position -1.0725984589099686 0.8678800036975951 1.0943896988746746
+  orientation 0.8326701186235576 -0.5050111336234572 -0.22720965751433483 5.470884802214339
+  position 0.8447682243877717 0.9683639008651165 1.5890532845830831
 }
 TexturedBackground {
   texture "dusk"
@@ -89,6 +89,24 @@ Solid {
 Thymio2 {
   controller "thymio2_RXR"
   bodySlot [
+    LightSensor {
+      translation -0.02 0.07 -0.042
+      rotation 0 1 0 2.07
+      name "ls0"
+      lookupTable [
+        0 0 0
+        4 1024 0
+      ]
+    }
+    LightSensor {
+      translation 0.02 0.07 -0.042
+      rotation 0 1 0 1.07
+      name "ls1"
+      lookupTable [
+        0 0 0
+        4 1024 0
+      ]
+    }
     Compass {
     }
   ]
