@@ -3,16 +3,20 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.7 0.7 0.2 0.75
-  position 1.2 1.6 2.3
-
+  orientation 0.4553968913325695 -0.861553850095421 -0.2243627303060575 5.423115417048806
+  position 1.135463247602834 0.6745754819295326 1.2593647591537802
 }
 TexturedBackground {
+  texture "dusk"
 }
 TexturedBackgroundLight {
 }
 RectangleArena {
-  
+  floorSize 3 3
 }
-#test
-# ttest1
+Thymio2 {
+  bodySlot [
+    LightSensor {
+    }
+  ]
+}
