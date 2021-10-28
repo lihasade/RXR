@@ -89,7 +89,7 @@ Solid {
 Thymio2 {
   controller "thymio2_RXR"
   bodySlot [
-    LightSensor {
+    Compass {
     }
   ]
 }
